@@ -32,6 +32,7 @@ export async function getNowPlaying() {
 
   const response = await axios.get(SPOTIFY_NOW_PLAYING_API, {
     headers: {
+      "Content-Type": 'application/json',
       'Authorization': `Bearer ${access_token}`,
     }
   })

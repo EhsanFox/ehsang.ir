@@ -1,5 +1,6 @@
 # Custom files
 public/feed.xml
+*.xml
 
 # Logs
 logs
