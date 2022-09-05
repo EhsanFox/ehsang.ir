@@ -13,6 +13,7 @@ export let projectsData = [
     description: 'a test project',
     imgSrc: '/static/images/*',
     href: '',
-    type: 'self'
+    type: 'self',
+    repoName: 'anything'
   }
 ]
