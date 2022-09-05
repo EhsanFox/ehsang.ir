@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Ehsan&#39;s blog - a Coding journey</title>
+      <link>https://ehsan.js.org/blog</link>
+      <description>Ehsan&#39;s coding journey - work and life stories through the keyboard of an open-source contributor and developer.</description>
+      <language>en-us</language>
+      <managingEditor>exxon.me@gmail.com (Ehsan Golmakani)</managingEditor>
+      <webMaster>exxon.me@gmail.com (Ehsan Golmakani)</webMaster>
+      <lastBuildDate>Sat, 05 Mar 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://ehsan.js.org/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://ehsan.js.org/blog/test</guid>
+    <title>a test blog post</title>
+    <link>https://ehsan.js.org/blog/test</link>
+    <description>a simple summery for my post</description>
+    <pubDate>Sat, 05 Mar 2022 00:00:00 GMT</pubDate>
+    <author>exxon.me@gmail.com (Ehsan Golmakani)</author>
+    <category>test</category><category>localhost</category><category>nodejs</category><category>blog</category>
+  </item>
+
+    </channel>
+  </rss>

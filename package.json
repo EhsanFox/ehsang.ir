@@ -1,0 +1,84 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "next-remote-watch ./data",
+    "dev": "next dev",
+    "build": "next build && tsx ./scripts/generate-sitemap",
+    "serve": "next start",
+    "analyze": "cross-env ANALYZE=true next build",
+    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.2.1",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.4",
+    "autoprefixer": "^10.4.8",
+    "axios": "^0.27.2",
+    "clsx": "^1.2.1",
+    "esbuild": "^0.14.54",
+    "github-slugger": "^1.4.0",
+    "gray-matter": "^4.0.3",
+    "image-size": "^1.0.2",
+    "isomorphic-unfetch": "^3.1.0",
+    "mdx-bundler": "^9.0.1",
+    "next": "^12.2.5",
+    "next-themes": "^0.2.0",
+    "postcss": "^8.4.16",
+    "postcss-loader": "^7.0.1",
+    "preact": "^10.10.6",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-share": "^4.4.0",
+    "reading-time": "^1.5.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-preset-minify": "^6.0.0",
+    "rehype-prism-plus": "^1.5.0",
+    "rehype-slug": "^5.0.1",
+    "remark-gfm": "^3.0.1",
+    "sharp": "^0.30.7",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swr": "^1.3.0",
+    "tailwindcss": "^3.1.8",
+    "typed.js": "^2.0.12"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^12.2.5",
+    "@svgr/webpack": "^6.3.1",
+    "@types/react": "^18.0.17",
+    "cross-env": "^7.0.3",
+    "dedent": "^0.7.0",
+    "eslint": "^8.23.0",
+    "eslint-config-next": "^12.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "file-loader": "^6.2.0",
+    "globby": "^13.1.2",
+    "husky": "^8.0.1",
+    "inquirer": "^9.1.0",
+    "lint-staged": "^13.0.3",
+    "next-remote-watch": "^1.0.0",
+    "prettier": "^2.7.1",
+    "prisma": "^4.2.1",
+    "rehype": "^12.0.1",
+    "remark-frontmatter": "^4.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-stringify": "^10.0.2",
+    "tsx": "^3.8.2",
+    "typescript": "^4.8.2",
+    "unified": "^10.1.2",
+    "unist-util-visit": "^4.1.1"
+  },
+  "lint-staged": {
+    "*.+(js|jsx|ts|tsx)": [
+      "eslint --fix"
+    ],
+    "*.+(js|jsx|ts|tsx|json|css)": [
+      "prettier --write"
+    ]
+  },
+  "optionalDependencies": {
+    "esbuild-linux-64": "^0.15.5"
+  }
+}
