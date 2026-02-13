@@ -1,84 +1,89 @@
 {
+  "name": "@figma/my-make-file",
   "private": true,
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "start": "next-remote-watch ./data",
-    "dev": "next dev",
-    "build": "next build && tsx ./scripts/generate-sitemap",
-    "serve": "next start",
-    "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky install"
+    "build": "vite build",
+    "dev": "vite"
   },
   "dependencies": {
-    "@prisma/client": "^4.2.1",
-    "@tailwindcss/forms": "^0.5.2",
-    "@tailwindcss/typography": "^0.5.4",
-    "autoprefixer": "^10.4.8",
-    "axios": "^0.27.2",
-    "clsx": "^1.2.1",
-    "esbuild": "^0.14.54",
-    "github-slugger": "^1.4.0",
-    "gray-matter": "^4.0.3",
-    "image-size": "^1.0.2",
-    "isomorphic-unfetch": "^3.1.0",
-    "mdx-bundler": "^9.0.1",
-    "next": "^12.2.5",
-    "next-themes": "^0.2.0",
-    "postcss": "^8.4.16",
-    "postcss-loader": "^7.0.1",
-    "preact": "^10.10.6",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-share": "^4.4.0",
-    "reading-time": "^1.5.0",
-    "rehype-autolink-headings": "^6.1.1",
-    "rehype-preset-minify": "^6.0.0",
-    "rehype-prism-plus": "^1.5.0",
-    "rehype-slug": "^5.0.1",
-    "remark-gfm": "^3.0.1",
-    "sharp": "^0.30.7",
-    "smoothscroll-polyfill": "^0.4.4",
-    "swr": "^1.3.0",
-    "tailwindcss": "^3.1.8",
-    "typed.js": "^2.0.12"
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/icons-material": "7.3.5",
+    "@mui/material": "7.3.5",
+    "@popperjs/core": "2.11.8",
+    "@radix-ui/react-accordion": "1.2.3",
+    "@radix-ui/react-alert-dialog": "1.1.6",
+    "@radix-ui/react-aspect-ratio": "1.1.2",
+    "@radix-ui/react-avatar": "1.1.3",
+    "@radix-ui/react-checkbox": "1.1.4",
+    "@radix-ui/react-collapsible": "1.1.3",
+    "@radix-ui/react-context-menu": "2.2.6",
+    "@radix-ui/react-dialog": "1.1.6",
+    "@radix-ui/react-dropdown-menu": "2.1.6",
+    "@radix-ui/react-hover-card": "1.1.6",
+    "@radix-ui/react-label": "2.1.2",
+    "@radix-ui/react-menubar": "1.1.6",
+    "@radix-ui/react-navigation-menu": "1.2.5",
+    "@radix-ui/react-popover": "1.1.6",
+    "@radix-ui/react-progress": "1.1.2",
+    "@radix-ui/react-radio-group": "1.2.3",
+    "@radix-ui/react-scroll-area": "1.2.3",
+    "@radix-ui/react-select": "2.1.6",
+    "@radix-ui/react-separator": "1.1.2",
+    "@radix-ui/react-slider": "1.2.3",
+    "@radix-ui/react-slot": "1.1.2",
+    "@radix-ui/react-switch": "1.1.3",
+    "@radix-ui/react-tabs": "1.1.3",
+    "@radix-ui/react-toggle-group": "1.1.2",
+    "@radix-ui/react-toggle": "1.1.2",
+    "@radix-ui/react-tooltip": "1.1.8",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "cmdk": "1.1.1",
+    "date-fns": "3.6.0",
+    "embla-carousel-react": "8.6.0",
+    "input-otp": "1.4.2",
+    "lucide-react": "0.487.0",
+    "motion": "12.23.24",
+    "next-themes": "0.4.6",
+    "react-day-picker": "8.10.1",
+    "react-dnd": "16.0.1",
+    "react-dnd-html5-backend": "16.0.1",
+    "react-hook-form": "7.55.0",
+    "react-popper": "2.3.0",
+    "react-resizable-panels": "2.1.7",
+    "react-responsive-masonry": "2.7.1",
+    "react-router": "7.13.0",
+    "react-slick": "0.31.0",
+    "recharts": "2.15.2",
+    "sonner": "2.0.3",
+    "tailwind-merge": "3.2.0",
+    "tw-animate-css": "1.3.8",
+    "vaul": "1.1.2"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^12.2.5",
-    "@svgr/webpack": "^6.3.1",
-    "@types/react": "^18.0.17",
-    "cross-env": "^7.0.3",
-    "dedent": "^0.7.0",
-    "eslint": "^8.23.0",
-    "eslint-config-next": "^12.2.5",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "file-loader": "^6.2.0",
-    "globby": "^13.1.2",
-    "husky": "^8.0.1",
-    "inquirer": "^9.1.0",
-    "lint-staged": "^13.0.3",
-    "next-remote-watch": "^1.0.0",
-    "prettier": "^2.7.1",
-    "prisma": "^4.2.1",
-    "rehype": "^12.0.1",
-    "remark-frontmatter": "^4.0.1",
-    "remark-parse": "^10.0.1",
-    "remark-stringify": "^10.0.2",
-    "tsx": "^3.8.2",
-    "typescript": "^4.8.2",
-    "unified": "^10.1.2",
-    "unist-util-visit": "^4.1.1"
+    "@tailwindcss/vite": "4.1.12",
+    "@vitejs/plugin-react": "4.7.0",
+    "tailwindcss": "4.1.12",
+    "vite": "6.3.5"
   },
-  "lint-staged": {
-    "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix"
-    ],
-    "*.+(js|jsx|ts|tsx|json|css)": [
-      "prettier --write"
-    ]
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
-  "optionalDependencies": {
-    "esbuild-linux-64": "^0.15.5"
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "6.3.5"
+    }
   }
 }
